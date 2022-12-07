@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectCurrency">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:paddingStart="3dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        android:text="From currency: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rgFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/rgFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgFromLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbfCNY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CNY"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbfEUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EUR"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbfJPY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JPY"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgFromRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbfKRW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KRW"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbfUSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbfVND"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VND"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingStart="3dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="10dp"
+        android:text="To currency: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rgTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgFrom"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/rgTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgToLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtCNY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CNY"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtEUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EUR"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtJPY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JPY"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgToRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtKRW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KRW"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtUSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbtVND"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VND"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bOK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/bCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgTo"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/bCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bOK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bOK"
+        app:layout_constraintTop_toTopOf="@+id/bOK"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
