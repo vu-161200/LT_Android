@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="File s.txt"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/file_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/image" />
+
+            <TextView
+                android:id="@+id/file_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Lorem dolor sed viverra ipsum nunc aliquet. Erat pellentesque adipiscing commodo elit. A iaculis at erat pellentesque. Volutpat diam ut venenatis tellus in. Tellus rutrum tellus pellentesque eu tincidunt. Feugiat scelerisque varius morbi enim nunc. Nibh cras pulvinar mattis nunc. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Leo vel fringilla est ullamcorper. Quis hendrerit dolor magna eget est lorem ipsum. Mauris a diam maecenas sed. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. In tellus integer feugiat scelerisque varius morbi enim nunc. Integer eget aliquet nibh praesent tristique magna. Tristique senectus et netus et malesuada. Odio eu feugiat pretium nibh ipsum.
+\n\nAuctor eu augue ut lectus arcu bibendum at varius. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Sem integer vitae justo eget magna fermentum iaculis eu. Non diam phasellus vestibulum lorem. Arcu dictum varius duis at consectetur lorem. Mi quis hendrerit dolor magna eget est lorem. In ante metus dictum at tempor commodo. Adipiscing bibendum est ultricies integer quis auctor elit. Sodales ut eu sem integer. Lacinia at quis risus sed vulputate. Posuere urna nec tincidunt praesent semper feugiat."
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/file_btnOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="OK"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
